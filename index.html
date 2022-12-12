@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>FitnessClub</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+        function validate()
+        {
+            if( document.getElementById("t1").value== "" )
+     {
+        alert( "Please provide your name!" );
+        document.getElementById("t1").focus() ;
+        return false;
+     }
+     if( document.getElementById("t2").value== "" )
+     {
+        alert( "Please provide your email!" );
+        document.getElementById("t2").focus() ;
+        return false;
+     }
+     if( document.getElementById("t3").value== "" )
+     {
+        alert( "Thanks for your response" );
+     }
+     return( True );
+        }
+    </script>
+
+</head>
+<body>
+<!-- adding preloader -->
+    <div class="preloader"></div>
+<!-- making navbar -->
+    <div class="header">
+        <div class="media">
+            <a href="#" class="media"><img src="assets/img/facebook.png" alt="#" height="38rem"></a>
+            <a href="#" class="media"><img src="assets/img/whatsapp.png" alt="#" height="38rem"></a>
+        </div>
+        <a href="index.html" style="text-decoration: none;color:#fff;">
+            <h1 class="logo-name">
+            <img src="assets/img/logo-nav.png" alt="#" height="28px">
+            FitnessClub
+            
+            
+        </h1></a>
+        
+        <div class="header-link">
+            <a href="about.html" class="header-link">About</a>
+            <a href="trainings.html" class="header-link">Trainings</a>
+            <a href="timetable.html" class="header-link">TimeTable</a>
+            <a href="nutrition.html" class="header-link">Nutrition</a>
+            <a href="gallery.html" class="header-link">Gallery</a>
+        </div>
+        
+    </div>
+    <hr class="sep">
+<!-- navbar ended here -->
+
+<!-- adding image according to project -->
+    <div class="top-container">
+        
+        <img src="assets/img/home-img.png"height="640px" alt="#">
+        <div class="top-rigth">
+            <!-- <h1 class="login">Register now</h1> -->
+        <!-- <form action="/action_page.php" method="get"> -->
+            <div class="box">
+                <form name="myForm" onsubmit="return(validate());">
+                    <span class="text-center">Register</span>
+                <div class="input-container">
+                    <input type="text" id="t1" style="
+                    font-size:16px;
+                    color:#fff;	
+                    transition: all 0.5s ease-in-out;
+                    font-weight: bold;">
+                    <label>Full Name</label>		
+                </div>
+                <div class="input-container">		
+                    <input type="email" id="t2">
+                    <label>Eamil</label>
+                </div>
+                    <button class="btn" id="t3">submit</button>
+            </form>	
+            
+    </div>
+    </div>
+    </div>
+    <!-- <hr class="line2"> adding css to make it look better -->
+    <div>
+    <pre class="middle-container">
+        <h1 class="message-h" style="font-weight: 800;">TRY US</h1>
+        <p class="message">“Come in and see how our range of Freestyle Group Training and signature group exercise classes can take your fitness further.”
+
+            </p>
+         </pre>
+<hr class="dot">
+    <div class="event">
+        
+        <table >
+            <tr>
+                <th style="text-align:right;"><h2>Latest Events</h2></th>
+                <!-- <th><p>New</p></th> -->
+            </tr>
+            <tr>
+                <td><img src="assets/img/bottom.png" alt="#" height="480px"></td>
+                <td><p>Break your limits now you can listen music while working 
+                
+                    out. We have added this feature to Gallery section.
+                </p></td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>
